@@ -9,8 +9,19 @@ const baseRoutes: AppRoutes = [
       title: 'Home',
       linkText: 'Home',
       pageTitle: 'Home Page',
-      iconName: 'solarHome2',
+      iconName: 'solarGlasses',
       linkDescription: 'Start Here',
+    },
+  },
+  {
+    path: 'movies',
+    loadChildren: () => import('../../domains/movies/movies.routes').then((m) => m.moviesRoutes), // Breaks all the code that lives there into a different javascript bundle.
+    data: {
+      title: 'Movies',
+      linkText: 'Movies',
+      iconName: 'solarGlasses',
+      pageTitle: 'Movies Page',
+      linkDescription: 'List of Movies',
     },
   },
   {

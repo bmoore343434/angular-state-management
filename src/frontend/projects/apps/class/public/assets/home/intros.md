@@ -10,6 +10,7 @@
 - Name
 - Job
 - How's it going? Anything fun?
+- Where do you live?
 - Expectations / Needs
 
 ## About Me

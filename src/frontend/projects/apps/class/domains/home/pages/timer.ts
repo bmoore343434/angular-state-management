@@ -29,8 +29,8 @@ export class TimerPage {
         const timeDiff = targetTime.getTime() - now.getTime();
         const seconds = Math.floor((timeDiff / 1000) % 60);
         const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-        const hours = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
-        this.timeLeft.set(`${hours}h ${minutes}m ${seconds}s`);
+
+        this.timeLeft.set(`${minutes}m ${seconds}s`);
       }, 1000);
 
       onCleanup(() => {
